@@ -221,10 +221,12 @@ main {
 .btn {
     margin-top: 20px;
     margin-left: 10px;
-    height: 50px;
     padding: 10px;
+    height: 40px;
+    background-color: blue;
+    color: #FFF;
     border-radius: 4px;
-    border-color: #FFF;
+    border-color: blue;
 }
 
 /* LOGIN */
@@ -246,13 +248,31 @@ main {
 /* mobile */
 @media (min-width: 361px) {
 
+    .formBuscar{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .formBuscar li{
+        position: relative;
+        width: 40%;
+    }
     .buscar{
         position: relative;
     }
     #lupa{
+        font-size: 15px;
+        color: #666;
         position: absolute;
-        left: 70%;
-        top: 7px;
+        left: 88%;
+        top: 30%;
+        background-color: #ffff;
+        
     }
     .producto:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -288,25 +308,16 @@ main {
         margin: auto;
     }
 
-    #buscar {
-        width: 80%;
-    }
-
     #logo {
-        width: 80%;
+        width: 100%;
     }
 
     .logo {
         padding: 5px;
     }
 
-    #lupa {
-        font-size: 20px;
-        color: #666;
-    }
-
     #buscar {
-        width: 80%;
+        width: 100%;
         border-radius: 4px;
         border-color: #ffff;
         height: 35px;
@@ -336,6 +347,9 @@ main {
        background-color: #0022AA;
 
     }
+    #icon{
+        font-size: 20px;
+    }
 
     /* registro */
     .formulario li {
@@ -348,6 +362,11 @@ main {
 
 /* desktop */
 @media (min-width: 769px) {
+
+    .formBuscar li{
+        position: relative;
+        width: 25%;
+    }
 
     .contenido {
         width: 100%;
@@ -397,6 +416,10 @@ main {
     .nav-bar i {
         font-size: 18px;
         margin: 0 5px;
+    }
+
+    #icon{
+        font-size: 30px;
     }
 
 }
