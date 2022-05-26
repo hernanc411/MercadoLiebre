@@ -249,6 +249,13 @@ main {
 @media (min-width: 361px) {
 
     .formBuscar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .formBuscar ul{
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -256,7 +263,7 @@ main {
         justify-content: space-around;
         width: 100%;
         align-items: center;
-        
+
     }
     .formBuscar li{
         position: relative;
